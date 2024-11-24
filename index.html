@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="heading1" class="heading1">devfinder</h1>
+      <div class="theme-box">
+        <h1 id="dark" class="colour_change">DARK</h1>
+        <h1 id="light">LIGHT</h1>
+        <img id="moon" src="./images/moon.svg" alt="icon" />
+        <img id="sun" src="./images/002-sun.svg" alt="icon" />
+      </div>
+    </div>
+    <form class="form" id="form">
+      <div class="searchname">
+        <img src="./images/Shape 2.svg" alt="icon" />
+        <input
+          type="text"
+          name="user"
+          id="user"
+          placeholder="Search GitHub username…"
+        />
+      </div>
+      <p id="no-results" class="no-results" style="display: none">No results</p>
+      <button id="button">Search</button>
+    </form>
+
+    <div id="user_information" class="user_information">
+      <div class="userbox">
+        <div class="user_photo">
+          <img
+            class="user_image"
+            src="./images/Bitmap (6).svg"
+            alt="User Profile Picture"
+          />
+        </div>
+        <div class="name_info">
+          <h1 id="username" class="username">The Octocat</h1>
+          <p id="nickname" class="nickname">@octocat</p>
+          <p id="bio" class="join_p">This profile has no bio</p>
+        </div>
+        <p id="joindate" class="join_p">Joined 25 Jan 2011</p>
+      </div>
+
+      <div id="followerbox" class="followerbox">
+        <div class="info">
+          <p id="f1" class="follower_tag">Repos</p>
+          <p id="n1" class="follower_number">0</p>
+        </div>
+        <div class="info">
+          <p id="f2" class="follower_tag">Followers</p>
+          <p id="n2" class="follower_number">0</p>
+        </div>
+        <div class="info">
+          <p id="f3" class="follower_tag">Following</p>
+          <p id="n3" class="follower_number">0</p>
+        </div>
+      </div>
+
+      <div class="icon_info">
+        <div class="iconbox1">
+          <div class="pin">
+            <img src="./images/003-pin.svg" alt="" />
+            <p id="link1" class="icon_paragraph">San Francisco</p>
+          </div>
+
+          <div class="pin">
+            <img src="./images/004-twitter.svg" alt="" />
+            <p id="link2" class="icon_paragraph">Not Available</p>
+          </div>
+        </div>
+
+        <div class="iconbox1">
+          <div class="pin">
+            <img src="./images/002-url.svg" alt="" />
+
+            <a id="link3" class="icon_paragraph" href="https://github.blog"
+              >https://github.blog</a
+            >
+          </div>
+
+          <div class="pin">
+            <img src="./images/001-office-building.svg" alt="" />
+            <p id="link4" class="icon_paragraph">@github</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
